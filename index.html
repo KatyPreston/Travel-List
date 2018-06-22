@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Manipulating the DOM</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <h1 id="heading">Travel Bucket List</h1>
+
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="country" class="primary">Country</label>
+          <input type="text" id="country" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="reason" class="primary">Reason</label>
+          <input type="text" id="reason" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="urgency" class="primary">Urgency</label>
+          <select id="urgency">
+            <option value="Definitely">Definitely</option>
+            <option value="Want">Want</option>
+            <option value="Maybe">Maybe</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>Travel Bucket List</h1>
+    <div id="travel-bucket-list"></div>
+
+
+  </body>
+</html>
