@@ -14,12 +14,20 @@ document.addEventListener("DOMContentLoaded", () => {
       const urgency = form.urgency.value;
 
       const result = document.querySelector("#travel-bucket-list");
-      result.textContent = `${country}, ${reason}, ${urgency}`;
+      item = `${country}, ${reason}, ${urgency}`;
+
+      createTravel(item, result);
 
       form.reset();
     }
 
 
   form.addEventListener("submit", handleFormSubmit);
+
+  const createTravel = function(content, container){
+    const stuff = document.createElement('p');
+    stuff.textContent = content;
+    container.appendChild(stuff);
+  };
 
 });
