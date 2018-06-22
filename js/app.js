@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const handleFormSubmit = function(event){
       event.preventDefault();
 
-      console.log("form logged")
       const form = event.target;
 
       const country = form.country.value;
