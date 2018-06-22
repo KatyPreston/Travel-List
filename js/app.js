@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       createTravel(item, result);
 
       form.reset();
-    }
+    };
 
 
   form.addEventListener("submit", handleFormSubmit);
